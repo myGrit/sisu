@@ -1,0 +1,57 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+    background-color: rgb(220, 220, 220);
+    /* color: white; */
+  }
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 80px;
+    background-color: black;
+  }
+.text-muted{
+      margin-top:16px;
+      margin-bottom:16px;
+  }
+.pb{
+    margin-top:20px;
+    background: transparent;
+    font-size: 11px;
+    color:white;
+  }
+.shadow{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.jumbotron {
+    background-image: url("cover.png");
+    background-size: cover;
+    padding:30px;
+}
+.text-inverse{
+    color:white;
+    margin:0;
+}
+.display-3{
+    font-weight: bolder;
+}
+.dot{
+    color: red;
+    font-size: 100px;
+}
+.tab-pane{
+    background-color:white;
+}
+.card-header{
+    border:0px;
+}
+.grit{
+    font-weight:bolder;
+    line-height: 10px;
+    }
