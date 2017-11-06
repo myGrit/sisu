@@ -33,6 +33,7 @@ body {
     background-image: url("cover.png");
     background-size: cover;
     padding:30px;
+    margin-bottom:10px;
 }
 .text-inverse{
     color:white;
@@ -45,6 +46,10 @@ body {
     color: red;
     font-size: 100px;
 }
+.dot2{
+    color: red;
+    font-size: 75px;
+}
 .tab-pane{
     background-color:white;
 }
@@ -55,3 +60,35 @@ body {
     font-weight:bolder;
     line-height: 10px;
     }
+#kidgt #adultgt .modal-dialog{
+    max-width: 1000px; 
+    position: relative;
+    /* top: 100px; */
+}
+.modal-dialog{
+    /* position: absolute;
+    top: 50px; */
+    max-width:950px;
+    max-height:600px;
+    /* right: 50%; */
+    /* bottom: 0; */
+    /* left: 50%;
+    z-index: 10040; */
+    overflow: auto;
+    overflow-y: auto;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
