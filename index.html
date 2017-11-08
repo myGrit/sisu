@@ -74,7 +74,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#participate" role="tab">Participate</a>
+                        <a class="nav-link" data-toggle="tab" href="#develop" role="tab">Develop Grit</a>
                     </li>
 
                     <li class="nav-item">
@@ -591,9 +591,9 @@
                             <br>
                             <div class="col-md-12">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#kidgt">Youth Grit Scale</button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#kidgt">Take the Youth Grit Scale</button>
 
                                         <!-- Modal content-->
                                         <div class="modal fade" id="kidgt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -628,22 +628,66 @@
                                                                     </p>
                                                                 </div>
                                                             <form>
+                                                                <!-- gender -->
                                                                     <fieldset class="form-group">
                                                                         <label for="gender">Gender</label>
                                                                         <div class="form-check" align="center">
                                                                             <label class="form-check-label">
                                                                                 <input type="radio" class="form-check-input" name="optionsRadios" id="male" value="option1" checked> Male
                                                                             </label>
-    
                                                                             <label class="form-check-label">
                                                                                 <input type="radio" class="form-check-input" name="optionsRadios" id="female" value="option2"> Female
                                                                             </label>
-    
                                                                             <label class="form-check-label">
                                                                                 <input type="radio" class="form-check-input" name="optionsRadios" id="lgbtq" value="option3"> LGBTQ
                                                                             </label>
                                                                         </div>
                                                                     </fieldset>
+                                                                    <!-- <br> -->
+                                                                <!-- ethnicity -->
+                                                                <fieldset>
+                                                                    <label for="ethnicity">Ethnicity</label>
+                                                                    <select class="form-control dropdown" id="ethnicity" name="ethnicity">
+                                                                      <option value="" selected="selected" disabled="disabled">Select the Ethnicity with which you are most aligned with...</option>
+                                                                      <optgroup label="White">
+                                                                        <option value="White English">English</option>
+                                                                        <option value="White Welsh">Welsh</option>
+                                                                        <option value="White Scottish">Scottish</option>
+                                                                        <option value="White Northern Irish">Northern Irish</option>
+                                                                        <option value="White Irish">Irish</option>
+                                                                        <option value="White Gypsy or Irish Traveller">Gypsy or Irish Traveller</option>
+                                                                        <option value="White Other">Any other White background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Mixed or Multiple ethnic groups">
+                                                                        <option value="Mixed White and Black Caribbean">White and Black Caribbean</option>
+                                                                        <option value="Mixed White and Black African">White and Black African</option>
+                                                                        <option value="Mixed White Other">Any other Mixed or Multiple background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Asian">
+                                                                        <option value="Asian Indian">Indian</option>
+                                                                        <option value="Asian Pakistani">Pakistani</option>
+                                                                        <option value="Asian Bangladeshi">Bangladeshi</option>
+                                                                        <option value="Asian Chinese">Chinese</option>
+                                                                        <option value="Asian Other">Any other Asian background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Black">
+                                                                        <option value="Black African">African</option>
+                                                                        <option value="Black African American">African American</option>
+                                                                        <option value="Black Caribbean">Caribbean</option>
+                                                                        <option value="Black Other">Any other Black background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Other ethnic groups">
+                                                                        <option value="Arab">Arab</option>
+                                                                        <option value="Hispanic">Hispanic</option>
+                                                                        <option value="Latino">Latino</option>
+                                                                        <option value="Native American">Native American</option>
+                                                                        <option value="Pacific Islander">Pacific Islander</option>
+                                                                        <option value="Other">Any other ethnic group</option>
+                                                                      </optgroup>
+                                                                    </select>
+                                                                  </fieldset>
+                                                                  <br>
+                                                                  <!-- age -->
                                                                     <div class="form-group">
                                                                         <label for="selectage placeholder">Age</label>
                                                                         <select class="form-control" id="selectage">
@@ -666,7 +710,7 @@
                                                                             <option value="16">16</option>
                                                                             <option value="17">17</option>
                                                                             <option value="18">18</option>
-                                                                            <option value="19">19</option>
+                                                                            <!-- <option value="19">19</option>
                                                                             <option value="20">20</option>
                                                                             <option value="21">21</option>
                                                                             <option value="22">22</option>
@@ -747,9 +791,10 @@
                                                                             <option value="97">97</option>
                                                                             <option value="98">98</option>
                                                                             <option value="99">99</option>
-                                                                            <option value="100">100</option>
+                                                                            <option value="100">100</option> -->
                                                                         </select>
                                                                     </div>
+                                                                    <!-- marital status
                                                                     <div class="form-group">
                                                                         <label for="selectms placeholder">Marital Status</label>
                                                                         <select class="form-control" id="selectms">
@@ -757,11 +802,40 @@
                                                                             <option>Married</option>
                                                                             <option>Single</option>
                                                                         </select>
+                                                                    </div> -->
+                                                                    <!-- birth order -->
+                                                                    <div class="form-group">
+                                                                        <label for="bo placeholder">Birth Order</label>
+                                                                        <select class="form-control" id="bo">
+                                                                            <option value="">Select child's birth position</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                        </select>
                                                                     </div>
+                                                                    <!-- zip code -->
                                                                     <label for="zip">Home Zip Code</label>
                                                                     <input type="text" class="form-control" id="zip" placeholder="Zip Code" value="" required>
                                                                     <br>
-                                                                    <div class="form-group">
+                                                                    <!-- employment status -->
+                                                                    <!-- <div class="form-group">
                                                                         <label for="employmentstatus placeholder">Employment Status</label>
                                                                         <select class="form-control" id="employmentstatus">
                                                                             <option value="">Select Status</option>
@@ -769,9 +843,9 @@
                                                                             <option>Employed Part Time</option>
                                                                             <option>Employed Full Time</option>
                                                                         </select>
-                                                                    </div>
-    
-                                                                    <div class="form-group">
+                                                                    </div> -->
+                                                                    <!-- regarding employment -->
+                                                                    <!-- <div class="form-group">
                                                                         <label for="regarding placeholder">Regarding Employment</label>
                                                                         <select class="form-control" id="regarding">
                                                                             <option value="">If Employed, in your opinion, are you ...</option>
@@ -779,34 +853,55 @@
                                                                             <option>Correctly Employed, in a job matching your skills</option>
                                                                             <option>Over Employed, in a job above your skills</option>
                                                                         </select>
-                                                                    </div>
-                                                                    <div class="form-group">
+                                                                    </div> -->
+                                                                    <!-- occupation -->
+                                                                    <!-- <div class="form-group">
                                                                         <label for="exampleInputEmail1">Occupation</label>
                                                                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Select an Occupation">
-                                                                    </div>
-                                                                    <div>
+                                                                    </div> -->
+                                                                    <!-- job title -->
+                                                                    <!-- <div>
                                                                         <label for="validationCustom03">Job Title</label>
                                                                         <input type="text" class="form-control" id="validationCustom03" placeholder="Your Job Title" required>
                                                                         <div class="invalid-feedback">
                                                                             Please provide a valid Job Title
                                                                         </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div>
+                                                                    </div> -->
+                                                                    <!-- <br> -->
+                                                                    <!-- pay rate -->
+                                                                    <!-- <div>
                                                                         <label for="validationCustom04">Monthly Rate in $</label>
                                                                         <input type="text" class="form-control" id="validationCustom04" placeholder="Monthly Rate of Pay" required>
                                                                         <div class="invalid-feedback">
                                                                             Please provide a valid Monthly Pay Rate
                                                                         </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div>
+                                                                    </div> -->
+                                                                    <!-- <br> -->
+                                                                    <!-- work start date -->
+                                                                    <!-- <div>
                                                                         <label for="example-date-input" class="">Start Date</label>
                                                                         <input class="form-control" type="date" value="" id="example-date-input">
                                                                         <div class="invalid-feedback">
                                                                             Please provide a valid Date.
                                                                         </div>
-                                                                    </div>
+                                                                    </div> -->
+                                                                    <div class="form-group">
+                                                                            <label for="education placeholder">Highest Completed Educational Level</label>
+                                                                            <select class="form-control" id="education">
+                                                                                <option value="">Please select your highest COMPLETED level of education...</option>
+                                                                                <option>Elementary (K-5)</option>
+                                                                                <option>Middle School (6-8)</option>
+                                                                                <option>High School (9-12)</option>
+                                                                                <option>Trade School</option>
+                                                                                <option>Some College, No Degree</option>
+                                                                                <option>Associates Degree</option>
+                                                                                <option>Bachelors Degree</option>
+                                                                                <option>Masters Degree</option>
+                                                                                <option>PhD, Doctorate or other Advanced Degree</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <br>
+                                                                        <hr>
                                                                     <div>
                                                                         <p>
                                                                             <h1>Grit Scale</h1>
@@ -1109,7 +1204,7 @@
                                                                                         </label>
                                                                                     </div>
                                                                                 </div>
-                                                                                <a href="" id="submit-grit-score" class="button">Get Your Score</a>
+                                                                                <button href="" type="submit"  class="btn btn-primary" id="submit-grit-score">Get Your Score</button>
                                                                             </form>
                                                                         </section>
                                                                     </div>
@@ -1195,16 +1290,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p align="left">
-                                            To make sure that we’re all on the same page, the definition of grit above, developed by Angela Duckworth, the psychologist
-                                            and researcher who coined the term: Grit is, passion and perseverance for long
-                                            term and meaningful goals.
+                                        <p align="center">
+                                                <br>
+                                                <img src="assets/img/kidschool.png" width="65%" height="65%">
                                         </p>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
 
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-danger clickable" data-toggle="modal" data-target="#adultgt">Adult Grit Scale</button>
+                                        <button type="button" class="btn btn-danger clickable" data-toggle="modal" data-target="#adultgt">Take the Adult Grit Scale</button>
 
                                         <!-- Modal content-->
                                         <div class="modal fade" id="adultgt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1247,6 +1341,7 @@
                                                                     <br>
                                                                 </p>
                                                             </div>
+                                                            <!-- gender -->
                                                             <form>
                                                                 <fieldset class="form-group">
                                                                     <label for="gender">Gender</label>
@@ -1254,21 +1349,62 @@
                                                                         <label class="form-check-label">
                                                                             <input type="radio" class="form-check-input" name="optionsRadios" id="male" value="option1" checked> Male
                                                                         </label>
-
                                                                         <label class="form-check-label">
                                                                             <input type="radio" class="form-check-input" name="optionsRadios" id="female" value="option2"> Female
                                                                         </label>
-
                                                                         <label class="form-check-label">
                                                                             <input type="radio" class="form-check-input" name="optionsRadios" id="lgbtq" value="option3"> LGBTQ
                                                                         </label>
                                                                     </div>
                                                                 </fieldset>
+                                                                <!-- ethnicity -->
+                                                                <fieldset>
+                                                                    <label for="ethnicity">Ethnicity</label>
+                                                                    <select class="form-control dropdown" id="ethnicity" name="ethnicity">
+                                                                      <option value="" selected="selected" disabled="disabled">Select the Ethnicity with which you are most aligned with...</option>
+                                                                      <optgroup label="White">
+                                                                        <option value="White English">English</option>
+                                                                        <option value="White Welsh">Welsh</option>
+                                                                        <option value="White Scottish">Scottish</option>
+                                                                        <option value="White Northern Irish">Northern Irish</option>
+                                                                        <option value="White Irish">Irish</option>
+                                                                        <option value="White Gypsy or Irish Traveller">Gypsy or Irish Traveller</option>
+                                                                        <option value="White Other">Any other White background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Mixed or Multiple ethnic groups">
+                                                                        <option value="Mixed White and Black Caribbean">White and Black Caribbean</option>
+                                                                        <option value="Mixed White and Black African">White and Black African</option>
+                                                                        <option value="Mixed White Other">Any other Mixed or Multiple background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Asian">
+                                                                        <option value="Asian Indian">Indian</option>
+                                                                        <option value="Asian Pakistani">Pakistani</option>
+                                                                        <option value="Asian Bangladeshi">Bangladeshi</option>
+                                                                        <option value="Asian Chinese">Chinese</option>
+                                                                        <option value="Asian Other">Any other Asian background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Black">
+                                                                        <option value="Black African">African</option>
+                                                                        <option value="Black African American">African American</option>
+                                                                        <option value="Black Caribbean">Caribbean</option>
+                                                                        <option value="Black Other">Any other Black background</option>
+                                                                      </optgroup>
+                                                                      <optgroup label="Other ethnic groups">
+                                                                        <option value="Arab">Arab</option>
+                                                                        <option value="Hispanic">Hispanic</option>
+                                                                        <option value="Latino">Latino</option>
+                                                                        <option value="Native American">Native American</option>
+                                                                        <option value="Pacific Islander">Pacific Islander</option>
+                                                                        <option value="Other">Any other ethnic group</option>
+                                                                      </optgroup>
+                                                                    </select>
+                                                                  </fieldset>
+                                                                  <!-- age -->
                                                                 <div class="form-group">
                                                                     <label for="selectage placeholder">Age</label>
                                                                     <select class="form-control" id="selectage">
                                                                         <option value="">Select Age</option>
-                                                                        <option value="1">1</option>
+                                                                        <!-- <option value="1">1</option>
                                                                         <option value="2">2</option>
                                                                         <option value="3">3</option>
                                                                         <option value="4">4</option>
@@ -1284,7 +1420,7 @@
                                                                         <option value="14">14</option>
                                                                         <option value="15">15</option>
                                                                         <option value="16">16</option>
-                                                                        <option value="17">17</option>
+                                                                        <option value="17">17</option> -->
                                                                         <option value="18">18</option>
                                                                         <option value="19">19</option>
                                                                         <option value="20">20</option>
@@ -1370,6 +1506,7 @@
                                                                         <option value="100">100</option>
                                                                     </select>
                                                                 </div>
+                                                                <!-- Marital Status -->
                                                                 <div class="form-group">
                                                                     <label for="selectms placeholder">Marital Status</label>
                                                                     <select class="form-control" id="selectms">
@@ -1378,9 +1515,13 @@
                                                                         <option>Single</option>
                                                                     </select>
                                                                 </div>
-                                                                <label for="zip">Home Zip Code</label>
-                                                                <input type="text" class="form-control" id="zip" placeholder="Zip Code" value="" required>
+                                                                <!-- zip code -->
+                                                                <div>
+                                                                    <label for="zip">Home Zip Code</label>
+                                                                    <input type="text" class="form-control" id="zip" placeholder="Zip Code" value="" required>
+                                                                </div>
                                                                 <br>
+                                                                <!-- employment status -->
                                                                 <div class="form-group">
                                                                     <label for="employmentstatus placeholder">Employment Status</label>
                                                                     <select class="form-control" id="employmentstatus">
@@ -1390,7 +1531,7 @@
                                                                         <option>Employed Full Time</option>
                                                                     </select>
                                                                 </div>
-
+                                                                <!-- regarding employment -->
                                                                 <div class="form-group">
                                                                     <label for="regarding placeholder">Regarding Employment</label>
                                                                     <select class="form-control" id="regarding">
@@ -1400,33 +1541,143 @@
                                                                         <option>Over Employed, in a job above your skills</option>
                                                                     </select>
                                                                 </div>
+                                                                <!-- occupation -->
                                                                 <div class="form-group">
-                                                                    <label for="exampleInputEmail1">Occupation</label>
-                                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Select an Occupation">
+                                                                    <label for="occupation placeholder">Occupation</label>
+                                                                    <select class="form-control" id="occupation">
+                                                                        <option value="" selected="selected" disabled="disabled">-- select one --</option>
+                                                                        <optgroup label="Healthcare Practitioners and Technical Occupations:">
+                                                                        <option value="1">-  Chiropractor</option>
+                                                                        <option value="2">-  Dentist</option>
+                                                                        <option value="3">-  Dietitian or Nutritionist</option>
+                                                                        <option value="4">-  Optometrist</option>
+                                                                        <option value="5">-  Pharmacist</option>
+                                                                        <option value="6">-  Physician</option>
+                                                                        <option value="7">-  Physician Assistant</option>
+                                                                        <option value="8">-  Podiatrist</option>
+                                                                        <option value="9">-  Registered Nurse</option>
+                                                                        <option value="10">-  Therapist</option>
+                                                                        <option value="11">-  Veterinarian</option>
+                                                                        <option value="12">-  Health Technologist or Technician</option>
+                                                                        <option value="13">-  Other Healthcare Practitioners and Technical Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Healthcare Support Occupations:">
+                                                                        <option value="14">-  Nursing, Psychiatric, or Home Health Aide</option>
+                                                                        <option value="15">-  Occupational and Physical Therapist Assistant or Aide</option>
+                                                                        <option value="16">-  Other Healthcare Support Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Business, Executive, Management, and Financial Occupations:">
+                                                                        <option value="17">-  Chief Executive</option>
+                                                                        <option value="18">-  General and Operations Manager</option>
+                                                                        <option value="19">-  Advertising, Marketing, Promotions, Public Relations, and Sales Manager</option>
+                                                                        <option value="20">-  Operations Specialties Manager (e.g., IT or HR Manager)</option>
+                                                                        <option value="21">-  Construction Manager</option>
+                                                                        <option value="22">-  Engineering Manager</option>
+                                                                        <option value="23">-  Accountant, Auditor</option>
+                                                                        <option value="24">-  Business Operations or Financial Specialist</option>
+                                                                        <option value="25">-  Business Owner</option>
+                                                                        <option value="26">-  Other Business, Executive, Management, Financial Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Architecture and Engineering Occupations:">
+                                                                        <option value="27">-  Architect, Surveyor, or Cartographer</option>
+                                                                        <option value="28">-  Engineer</option>
+                                                                        <option value="29">-  Other Architecture and Engineering Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Education, Training, and Library Occupations:">
+                                                                        <option value="30">-  Postsecondary Teacher (e.g., College Professor)</option>
+                                                                        <option value="31">-  Primary, Secondary, or Special Education School Teacher</option>
+                                                                        <option value="32">-  Other Teacher or Instructor</option>
+                                                                        <option value="33">-  Other Education, Training, and Library Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Other Professional Occupations:">
+                                                                        <option value="34">-  Arts, Design, Entertainment, Sports, and Media Occupations</option>
+                                                                        <option value="35">-  Computer Specialist, Mathematical Science</option>
+                                                                        <option value="36">-  Counselor, Social Worker, or Other Community and Social Service Specialist</option>
+                                                                        <option value="37">-  Lawyer, Judge</option>
+                                                                        <option value="38">-  Life Scientist (e.g., Animal, Food, Soil, or Biological Scientist, Zoologist)</option>
+                                                                        <option value="39">-  Physical Scientist (e.g., Astronomer, Physicist, Chemist, Hydrologist)</option>
+                                                                        <option value="40">-  Religious Worker (e.g., Clergy, Director of Religious Activities or Education)</option>
+                                                                        <option value="41">-  Social Scientist and Related Worker</option>
+                                                                        <option value="42">-  Other Professional Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Office and Administrative Support Occupations:">
+                                                                        <option value="43">-  Supervisor of Administrative Support Workers</option>
+                                                                        <option value="44">-  Financial Clerk</option>
+                                                                        <option value="45">-  Secretary or Administrative Assistant</option>
+                                                                        <option value="46">-  Material Recording, Scheduling, and Dispatching Worker</option>
+                                                                        <option value="47">-  Other Office and Administrative Support Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Services Occupations:">
+                                                                        <option value="48">-  Protective Service (e.g., Fire Fighting, Police Officer, Correctional Officer)</option>
+                                                                        <option value="49">-  Chef or Head Cook</option>
+                                                                        <option value="50">-  Cook or Food Preparation Worker</option>
+                                                                        <option value="51">-  Food and Beverage Serving Worker (e.g., Bartender, Waiter, Waitress)</option>
+                                                                        <option value="52">-  Building and Grounds Cleaning and Maintenance</option>
+                                                                        <option value="53">-  Personal Care and Service (e.g., Hairdresser, Flight Attendant, Concierge)</option>
+                                                                        <option value="54">-  Sales Supervisor, Retail Sales</option>
+                                                                        <option value="55">-  Retail Sales Worker</option>
+                                                                        <option value="56">-  Insurance Sales Agent</option>
+                                                                        <option value="57">-  Sales Representative</option>
+                                                                        <option value="58">-  Real Estate Sales Agent</option>
+                                                                        <option value="59">-  Other Services Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Agriculture, Maintenance, Repair, and Skilled Crafts Occupations:">
+                                                                        <option value="60">-  Construction and Extraction (e.g., Construction Laborer, Electrician)</option>
+                                                                        <option value="61">-  Farming, Fishing, and Forestry</option>
+                                                                        <option value="62">-  Installation, Maintenance, and Repair</option>
+                                                                        <option value="63">-  Production Occupations</option>
+                                                                        <option value="64">-  Other Agriculture, Maintenance, Repair, and Skilled Crafts Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Transportation Occupations:">
+                                                                        <option value="65">-  Aircraft Pilot or Flight Engineer</option>
+                                                                        <option value="66">-  Motor Vehicle Operator (e.g., Ambulance, Bus, Taxi, or Truck Driver)</option>
+                                                                        <option value="67">-  Other Transportation Occupation</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="Other Occupations:">
+                                                                        <option value="68">-  Military</option>
+                                                                        <option value="69">-  Homemaker</option>
+                                                                        <option value="70">-  Other Occupation</option>
+                                                                        <option value="71">-  Don't Know</option>
+                                                                        <option value="72">-  Not Applicable</option>
+                                                                        </optgroup>
+                                                                    </select>
                                                                 </div>
-                                                                <div>
-                                                                    <label for="validationCustom03">Job Title</label>
-                                                                    <input type="text" class="form-control" id="validationCustom03" placeholder="Your Job Title" required>
-                                                                    <div class="invalid-feedback">
-                                                                        Please provide a valid Job Title
-                                                                    </div>
+                                                                <!-- job title -->
+                                                                <div class="form-group">
+                                                                        <label for="jobTitle">Your Job Title</label>
+                                                                        <input type="text" class="form-control" id="jobTitle" placeholder="Your Job Title" required>
+                                                                        <div class="invalid-feedback">Please provide a valid Job Title</div>
                                                                 </div>
-                                                                <br>
-                                                                <div>
-                                                                    <label for="validationCustom04">Monthly Rate in $</label>
+                                                                <!-- monthly pay -->
+                                                                <div class="form-group">
+                                                                    <label for="validationCustom04">Your Monthly Pay Rate in $</label>
                                                                     <input type="text" class="form-control" id="validationCustom04" placeholder="Monthly Rate of Pay" required>
-                                                                    <div class="invalid-feedback">
-                                                                        Please provide a valid Monthly Pay Rate
-                                                                    </div>
+                                                                    <div class="invalid-feedback">Please provide a valid Monthly Pay Rate</div>
+                                                                </div>
+                                                                <!-- current job start date -->
+                                                                <div class="form-group">
+                                                                    <label for="example-date-input" class="">Start Date of Current Position</label>
+                                                                    <input class="form-control" type="date" value="" id="example-date-input">
+                                                                    <div class="invalid-feedback">Please provide a valid Date.</div>
+                                                                </div>
+                                                                <!-- education -->
+                                                                <div class="form-group">
+                                                                    <label for="education placeholder">Highest Completed Educational Level</label>
+                                                                    <select class="form-control" id="education">
+                                                                        <option value="">Please select your highest COMPLETED level of education...</option>
+                                                                        <option>Elementary (K-5)</option>
+                                                                        <option>Middle School (6-8)</option>
+                                                                        <option>High School (9-12)</option>
+                                                                        <option>Trade School</option>
+                                                                        <option>Some College, No Degree</option>
+                                                                        <option>Associates Degree</option>
+                                                                        <option>Bachelors Degree</option>
+                                                                        <option>Masters Degree</option>
+                                                                        <option>PhD, Doctorate or other Advanced Degree</option>
+                                                                    </select>
                                                                 </div>
                                                                 <br>
-                                                                <div>
-                                                                    <label for="example-date-input" class="">Start Date</label>
-                                                                    <input class="form-control" type="date" value="" id="example-date-input">
-                                                                    <div class="invalid-feedback">
-                                                                        Please provide a valid Date.
-                                                                    </div>
-                                                                </div>
+                                                                <hr>
                                                                 <div>
                                                                     <p>
                                                                         <h1>Grit Scale</h1>
@@ -1801,7 +2052,7 @@
                                                                                     </label>
                                                                                 </div>
                                                                             </div>
-                                                                            <a href="" id="submit-grit-score" class="button">Get Your Score</a>
+                                                                            <button href="" type="submit"  class="btn btn-primary" id="submit-grit-score">Get Your Score</button>
                                                                         </form>
                                                                     </section>
                                                                 </div>
@@ -1884,7 +2135,7 @@
                                                     <!-- </div> -->
                                                 <!-- </div> -->
                                                 <br>
-                                                <button type="submit" class="btn btn-primary" id="add-employee">Submit</button>
+                                                <!-- <button type="submit" class="btn btn-primary" id="add-employee">Submit</button> -->
                                                 </form>
                                                 </panel>
                                             </div>
@@ -1896,21 +2147,19 @@
                                     </div>
                                 </div>
                                 <p>
-                                    It is the ability to persist in something you feel passionate about even in the face of obstacles. This kind of passion is
-                                    not about intense emotions or infatuation. It’s about having direction and commitment.
-                                    When you have this kind of passion, you can stay committed to a task that may be difficult
-                                    or boring.
+                                    <br>
+                                    <img src="assets/img/adultwork.png" width="65%" height="65%">
                                 </p>
                             </div>
 
 
 
-                            <div class="col-md-4">
+                            <!-- <div class="col-md-4"> -->
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#teengt">Teen Grit Scale</button>
+                                <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#teengt">Teen Grit Scale</button> -->
 
                                 <!-- Modal content-->
-                                <div class="modal fade" id="teengt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <!-- <div class="modal fade" id="teengt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -1934,12 +2183,12 @@
                                     contribute (Duckworth 2016).
                                 </p>
 
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane" id="participate" role="tabpanel">...</div>
+            <div class="tab-pane" id="develop" role="tabpanel">...</div>
             <div class="tab-pane" id="research" role="tabpanel">...</div>
             <div class="tab-pane" id="visuals" role="tabpanel">...</div>
             <div class="tab-pane" id="resources" role="tabpanel">...</div>
