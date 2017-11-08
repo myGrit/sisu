@@ -5,6 +5,9 @@
 // })
 
 // // Select tab by name
+
+// $('.nav-tabs a[href="#how"]').tab('show')
+
 // $('.nav-tabs a[href="#how"]').tab('show')
 $('select').change(function() {
     if ($(this).children('option:first-child').is(':selected')) {
@@ -13,3 +16,4 @@ $('select').change(function() {
      $(this).removeClass('placeholder');
     }
    });
+

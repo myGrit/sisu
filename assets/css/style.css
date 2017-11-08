@@ -30,7 +30,7 @@ body {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .jumbotron {
-    background-image: url("cover.png");
+    background-image: url("../img/cover.png");
     background-size: cover;
     padding:30px;
     margin-bottom:10px;
@@ -66,6 +66,22 @@ body {
     /* top: 100px; */
 }
 .modal-dialog{
+    position: fixed;
+    top: 40px;
+    /* position: absolute;
+    top: 50px; */
+    max-width:950px;
+    max-height:600px;
+    right: 0;
+	bottom: 0;
+	left: 0;
+    z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+    overflow: auto;
+    overflow-y: auto;
     position: fixed;
     top: 40px;
     max-width:950px;
@@ -105,4 +121,5 @@ body {
 .select option:first-child{
     color: lightgrey; display: none;}
 .select option{
-    color: lightgrey;}
+    color: lightgrey;
+}
