@@ -60,6 +60,13 @@ body {
     font-weight:bolder;
     line-height: 10px;
     }
+/* .logo{
+    max-width:auto;
+    max-height:67.56px;
+}     */
+.btn-sm{
+    margin:3px;
+}
 #kidgt #adultgt .modal-dialog{
     max-width: 1000px;
     position: relative;
@@ -122,4 +129,25 @@ body {
     color: lightgrey; display: none;}
 .select option{
     color: lightgrey;
+}
+/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left:50%;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
 }
