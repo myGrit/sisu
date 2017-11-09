@@ -60,10 +60,11 @@ body {
     font-weight:bolder;
     line-height: 10px;
     }
-/* .logo{
-    max-width:auto;
-    max-height:67.56px;
-}     */
+.img-float-left{
+    float:left;
+    padding-right:15px;
+    padding-bottom:4px;
+}
 .btn-sm{
     margin:3px;
 }
