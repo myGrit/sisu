@@ -66,13 +66,15 @@ $(document).on("click", "#search", function(){
             // Confirm that the specific JSON for the article isn't missing any details
             // If the article has a headline include the headline in the HTML
             if (NYTData.response.docs[i].headline !== "null") {
-              $("#article-well-" + articleCounter)
-                .append(
-                  "<h4 class='articleHeadline'> <span class='label label-primary'>" +
-                  articleCounter + "</span>.  " +
-                  NYTData.response.docs[i].headline.main + "</h4>"
-                );
-
+              $("#article-well-" + articleCounter).append("<a href="+NYTData.response.docs[i].web_url+'>'+NYTData.response.docs[i].headline.main+"</a>")
+              // $("a").attr("href",)
+              $("a").attr("target", "_blank")
+              .addClass("articleHeadline")
+              .append("<span class=label label-primary>" + "<span>");
+                // .append(
+                //   "<a target='_blank' href="+NYTData.response.docs[i].web_url + "class=articleHeadline>" + "<span class='label label-primary'>" +
+                //   articleCounter + "</span>.  " +
+                //   NYTData.response.docs[i].headline.main + "</a>")
               // Log the first article's headline to console
               console.log(NYTData.response.docs[i].headline.main);
             }
