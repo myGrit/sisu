@@ -35,7 +35,7 @@ var articleCounter = 0;
 var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" +
 authKey + "&q=";
 
-$("#search").on("click",function(){
+$(document).on("click", "#search", function(){
   console.log($(this).attr("data-value"))
   console.log("button clicked");
   var clickedBtnVal = $(this).attr("data-value");
@@ -48,6 +48,9 @@ $("#search").on("click",function(){
     method: "GET"
   }).done(function(NYTData){
     console.log(NYTData);
+    //this empties our well section and resets counter
+    articleCounter = 0;
+    $("#well-section").empty()
         // Loop through and provide the correct number of articles
     for (var i = 0; i < 10; i++) {
 
@@ -57,7 +60,7 @@ $("#search").on("click",function(){
             // Create the HTML well (section) and add the article content for each
             var wellSection = $("<div>");
             wellSection.addClass("well");
-            wellSection.attr("id", "article-well-" + articleCounter);
+            wellSection.attr("id", "article-well-" + articleCounter );
             $("#well-section").append(wellSection);
 
             // Confirm that the specific JSON for the article isn't missing any details
@@ -65,8 +68,8 @@ $("#search").on("click",function(){
             if (NYTData.response.docs[i].headline !== "null") {
               $("#article-well-" + articleCounter)
                 .append(
-                  "<h4 class='articleHeadline'><span class='label label-primary'>" +
-                  articleCounter + "</span>" +
+                  "<h4 class='articleHeadline'> <span class='label label-primary'>" +
+                  articleCounter + "</span>.  " +
                   NYTData.response.docs[i].headline.main + "</h4>"
                 );
 
@@ -76,22 +79,22 @@ $("#search").on("click",function(){
 
             // If the article has a byline include the headline in the HTML
             if (NYTData.response.docs[i].byline && NYTData.response.docs[i].byline.original) {
-              $("#article-well-" + articleCounter)
-                .append("<p>" + NYTData.response.docs[i].byline.original + "</p>");
+              $("#article-well-" + articleCounter )
+                .append("<p>" + NYTData.response.docs [i].byline.original + "</p>");
 
               // Log the first article's Author to console.
-              console.log(NYTData.response.docs[i].byline.original);
+              console.log(NYTData.response.docs [i].byline.original);
             }
 
             // Then display the remaining fields in the HTML (Section Name, Date, URL)
-            $("#articleWell-" + articleCounter)
-              .append("<h5>Section: " + NYTData.response.docs[i].section_name + "</h5>");
-            $("#articleWell-" + articleCounter)
-              .append("<h5>" + NYTData.response.docs[i].pub_date + "</h5>");
-            $("#articleWell-" + articleCounter)
+            $("#articleWell-" + articleCounter )
+              .append("<p>Section: " + NYTData.response.docs [i].section_name + "</p>");
+            $("#articleWell-" + articleCounter )
+              .append("<p>" + NYTData.response.docs [i].pub_date + "</p>");
+            $("#articleWell-" + articleCounter )
               .append(
-                "<a href='" + NYTData.response.docs[i].web_url + "'>" +
-                NYTData.response.docs[i].web_url + "</a>"
+                "<a href='" + NYTData.response.docs [i].web_url + "'>" +
+                NYTData.response.docs [i].web_url + "</a>"
               );
 
             // Log the remaining fields to console as well
