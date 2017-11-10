@@ -2201,16 +2201,29 @@
                                 <p align="center">
                                         <img src="assets/img/nytlogo.png" class="logo" alt="new york time logo" width="80%" height="80%">
                                         <hr>
-                                        <button type="button" class="btn btn-danger btn-sm">Grit</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Determination</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Perseverance</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Persistence</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Hard Work</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Angela Duckworth</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Carol Dweck</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Growth Mindset</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Grit Scale</button>
+                                        <button type="submit" class="btn btn-danger btn-sm" id="search" data-value="grit">Grit</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="search" data-value="determination">Determination</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="search" data-value="perseverance">Perseverance</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="search" data-value="persistence">Persistence</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="search" data-value="hard+work">Hard Work</button>
+                                        <button type="button" class="btn btn-danger btn-sm"id="search" data-value="angela+duckworth">Angela Duckworth</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="search" data-value="carol+dweck">Carol Dweck</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="search" data-value="growth
+                                        +mindset">Growth Mindset</button>
+                                        <button type="button" class="btn btn-danger btn-sm" id="search" data-value="grit+scale">Grit Scale</button>
                                         <!-- <img src="assets/img/kidschool.png" width="65%" height="65%"> -->
+                                        <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+                                        <div class="panel panel-primary">
+                                            <!-- Panel Heading for the retrieved articles box -->
+                                            <div class="panel-heading">
+                                            <h3 class="panel-title"><strong>Article Inspiration</strong></h3>
+                                            </div>
+                                            <hr>
+                                            <!-- This main panel will hold each of the resulting articles -->
+                                            <div class="panel-heading"></div>
+                                            <div class="panel-body" id="well-section" align="left">
+                                            </div>
+                                        </div>
                                 </p>
                                     </div>
                             </div>
@@ -2230,6 +2243,18 @@
                                         <button type="button" class="btn btn-danger btn-sm">Growth Mindset</button>
                                         <button type="button" class="btn btn-danger btn-sm">Grit Scale</button>
                                         <!-- <img src="assets/img/kidschool.png" width="65%" height="65%"> -->
+                                        <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+                                        <div class="panel panel-primary">
+                                                <!-- Panel Heading for the retrieved articles box -->
+                                                <div class="panel-heading">
+                                                <h3 class="panel-title"><strong>Video Inspiration</strong></h3>
+                                                </div>
+                                                <hr>
+                                                <!-- This main panel will hold each of the resulting articles -->
+                                                <div class="panel-heading"></div>
+                                                <div class="panel-body" id="well-section" align="left">
+                                                </div>
+                                            </div>
                                 </p>
                                     </div>
                             </div>
@@ -2336,8 +2361,7 @@
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
