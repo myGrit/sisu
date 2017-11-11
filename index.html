@@ -93,7 +93,8 @@
                             <br>
                             <!-- <h1 class="card-title grit"><br>GRIT<span class="dot">.</span></h1>
                                     <p class="card-text">Defined as: Passion and perseverance for long-term and meaningful goals.</p> -->
-                            <a data-toggle="tab" href="#how" class="nav-item btn btn-danger" role="tab">How Gritty are you?</a>
+                            <!-- <a data-toggle="tab" href="#how" class="nav-item btn btn-danger" role="tab">How Gritty are you?</a> -->
+                            <h4>We are here to introduce you to, and encourage you to develop your level of GRIT.</h4>
                             <div class="container">
                                 <br>
                                 <div class="col-md-12">
@@ -2228,15 +2229,15 @@
                                 <p align="center">
                                         <img src="assets/img/ytlogo.png" class="logo" alt="youtube logo" width="28%" height="28%">
                                         <hr>
-                                        <button type="button" class="btn btn-primary btn-sm">Grit</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Determination</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Perseverance</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Persistence</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Hard Work</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Angela Duckworth</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Carol Dweck</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Growth Mindset</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Grit Scale</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youGrit">Grit</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youDetermination">Determination</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youPerseverance">Perseverance</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youPersistance">Persistence</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youHardwork">Hard Work</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youAngelaDuckworth">Angela Duckworth</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youCarolDweck">Carol Dweck</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youGrowthMidnset">Growth Mindset</button>
+                                        <button type="button" class="btn btn-primary btn-sm" id="youGritScale">Grit Scale</button>
                                         <!-- <img src="assets/img/kidschool.png" width="65%" height="65%"> -->
                                         <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
                                         <div class="panel panel-primary">
@@ -2245,11 +2246,46 @@
                                                 <h3 class="panel-title"><strong>Video Inspiration</strong></h3>
                                                 </div>
                                                 <hr>
-                                                <!-- This main panel will hold each of the resulting articles -->
+                                                <!-- This main panel will hold each of the resulting videos -->
                                                 <div class="panel-heading"></div>
                                                 <div class="panel-body" id="well-section" align="left">
+                                                <!-- video results -->
+                                                <!-- <div> -->
+                                                        <!-- your result0 is here -->
+                                                        <div id="results">
+                                                        <div id="result0" align="left">
+                                                          <h5 id="title0"></h5>
+                                                          <img id="img0" src="">
+                                                          <p id="content0"></p>
+                                                        </div>
+                                                        <!-- your result1 is here -->
+                                                        <div id="result1" align="left">
+                                                          <h5 id="title1"></h5>
+                                                          <img id="img1" src="">
+                                                          <p id="content1"></p>
+                                                        </div>
+                                                        <!-- your result2 is here -->
+                                                        <div id="result2" align="left">
+                                                          <h5 id="title2"></h5>
+                                                          <img id="img2" src="">
+                                                          <p id="content2"></p>
+                                                        </div>
+                                                        <!-- your result3 is here -->
+                                                        <div id="result3" align="left">
+                                                          <h5 id="title3"></h5>
+                                                          <img id="img3" src="">
+                                                          <p id="content3"></p>
+                                                        </div>
+                                                        <!-- your result4 is here -->
+                                                        <div id="result4" align="left">
+                                                          <h5 id="title4"></h5>
+                                                          <img id="img4" src="">
+                                                          <p id="content4"></p>
+                                                        </div>
+                                                        </div>
                                                 </div>
-                                            </div>
+                                            <!-- </div> -->
+                                        </div>
                                 </p>
                                     </div>
                             </div>
@@ -2361,5 +2397,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/youtube.js"></script>
 </body>
 </html>
